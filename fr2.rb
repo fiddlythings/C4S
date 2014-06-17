@@ -12,7 +12,5 @@
 
 
 Dir.glob("./agk/*") do |filename|
-
-puts "#{filename} - #{File.size(filename)} - #{File.mtime(filename)}" if File.read(filename) =~ /BCX98321/
-
+  puts "#{filename} - #{File.size(filename)} - #{File.mtime(filename)}" if File.read(filename) =~ /BCX98321/
 end
